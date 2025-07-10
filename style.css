@@ -2,12 +2,12 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #111;
+  background: #0f0f0f;
   color: #fff;
 }
 
 .hero {
-  background: url('https://images.pexels.com/photos/462162/pexels-photo-462162.jpeg') center/cover no-repeat;
+  background: url('https://images.pexels.com/photos/1051077/pexels-photo-1051077.jpeg') center/cover no-repeat;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -52,6 +52,7 @@ h2 {
 
 a {
   color: #ffa500;
+  text-decoration: none;
 }
 
 .video-grid {
@@ -65,4 +66,22 @@ a {
   width: 100%;
   height: 200px;
   border-radius: 8px;
+}
+
+.thumb-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.thumb-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.thumb-grid img:hover {
+  transform: scale(1.05);
 }
