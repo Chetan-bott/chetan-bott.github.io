@@ -79,9 +79,11 @@ a {
   width: 100%;
   height: auto;
   border-radius: 8px;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 8px rgba(0,0,0,0.4);
 }
 
 .thumb-grid img:hover {
   transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(255,193,7,0.6);
 }
